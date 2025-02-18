@@ -1,0 +1,30 @@
+.sideMenu {
+    position: fixed;
+    right: 0;
+    transition: opacity 300ms;
+}
+
+.login, .signup {
+    $scaleFactor: 1.2;
+    top: 50vh;
+    left: 50%;
+    translate: -50% -50%;
+
+    @include sm {
+        top: calc(50vh / $scaleFactor);
+        zoom: $scaleFactor;
+    }
+}
+
+.slideDown {
+    @include slideDown($animationTime: 300ms, $startY: -20px, $endY: 0);
+}
+
+.globalWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--modules-gap);
+    min-height: 100vh;
+}

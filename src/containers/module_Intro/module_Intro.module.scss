@@ -1,0 +1,23 @@
+.module_Intro {
+  .picContainer {
+    width: 50%;
+    border-radius: 40px;
+    .pic {
+      border-radius: inherit;
+      position: relative;
+      width: 100%;
+    }
+  }
+  .title {
+    color: $dark-text-color;
+    align-self: flex-end;
+    vertical-align: bottom;
+  }
+  .description {
+    list-style-position: inside; //otherwise points go outside container
+    color: $dark-text-color;
+    vertical-align: top;
+  }
+}
+  
+  

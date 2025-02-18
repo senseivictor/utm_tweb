@@ -1,0 +1,16 @@
+.bgCircles {
+    position: absolute;
+    top: var(--top-offset);
+    left: var(--left-offset);
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* To avoid interfering with other UI elements */
+  }
+  
+  .circle {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5); /* Example color */
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  

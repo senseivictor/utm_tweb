@@ -1,0 +1,84 @@
+@import "_breakpoints.scss";
+@import "_variables.scss";
+
+@include xs {
+    :root {
+        --global-padding: #{$xs-padding};
+        --modules-gap: #{$xs-modules-gap};
+        --global-elements-gap: #{$xs-elements-gap};
+        --heading1-font-size: #{$xs-heading1-font-size};
+        --heading2-font-size: #{$xs-heading2-font-size};
+        --heading3-font-size: #{$xs-heading3-font-size};
+        --heading4-font-size: #{$xs-heading4-font-size};
+        --heading4-span-font-size: #{$xs-heading4-span-font-size};
+        --description1-font-size: #{$xs-description1-font-size};
+        --description2-font-size: #{$xs-description2-font-size};
+        --smallerText-font-size: #{$xs-smallerText-font-size};
+        --topBarText-font-size: #{$xs-topBarText-font-size};
+    }
+}
+
+@include sm {
+    :root {
+        --global-padding: #{$sm-padding};
+        --modules-gap: #{$sm-modules-gap};
+        --global-elements-gap: #{$sm-elements-gap};
+        --heading1-font-size: #{$sm-heading1-font-size};
+        --heading2-font-size: #{$sm-heading2-font-size};
+        --heading3-font-size: #{$sm-heading3-font-size};
+        --heading4-font-size: #{$sm-heading4-font-size};
+        --heading4-span-font-size: #{$sm-heading4-span-font-size};
+        --description1-font-size: #{$sm-description1-font-size};
+        --description2-font-size: #{$sm-description2-font-size};
+        --smallerText-font-size: #{$sm-smallerText-font-size};
+        --topBarText-font-size: #{$sm-topBarText-font-size};
+    }
+}
+
+@include md {
+    :root {
+        --global-padding: #{$md-padding};
+        --modules-gap: #{$md-modules-gap};
+        --global-elements-gap: #{$md-elements-gap};
+        --heading1-font-size: #{$md-heading1-font-size};
+        --heading2-font-size: #{$md-heading2-font-size};
+        --heading3-font-size: #{$md-heading3-font-size};
+        --heading4-font-size: #{$md-heading4-font-size};
+        --description1-font-size: #{$md-description1-font-size};
+        --description2-font-size: #{$md-description2-font-size};
+        --smallerText-font-size: #{$md-smallerText-font-size};
+        --topBarText-font-size: #{$md-topBarText-font-size};
+    }
+}
+
+@include lg {
+    :root {
+        --global-padding: #{$lg-padding};
+        --modules-gap: #{$lg-modules-gap};
+        --global-elements-gap: #{$lg-elements-gap};
+        --heading1-font-size: #{$lg-heading1-font-size};
+        --heading2-font-size: #{$lg-heading2-font-size};
+        --heading3-font-size: #{$lg-heading3-font-size};
+        --heading4-font-size: #{$lg-heading4-font-size};
+        --description1-font-size: #{$lg-description1-font-size};
+        --description2-font-size: #{$lg-description2-font-size};
+        --smallerText-font-size: #{$lg-smallerText-font-size};
+        --topBarText-font-size: #{$lg-topBarText-font-size};
+    }
+}
+
+@include xl {
+    :root {
+        --global-padding: #{$xl-padding};
+        --modules-gap: #{$xl-modules-gap};
+        --global-elements-gap: #{$xl-elements-gap};
+        --heading1-font-size: #{$xl-heading1-font-size};
+        --heading2-font-size: #{$xl-heading2-font-size};
+        --heading3-font-size: #{$xl-heading3-font-size};
+        --heading4-font-size: #{$xl-heading4-font-size};
+        --description1-font-size: #{$xl-description1-font-size};
+        --description2-font-size: #{$xl-description2-font-size};
+        --smallerText-font-size: #{$xl-smallerText-font-size};
+        --topBarText-font-size: #{$xl-topBarText-font-size};
+    }
+}

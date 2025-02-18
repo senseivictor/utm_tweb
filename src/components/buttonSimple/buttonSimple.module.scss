@@ -1,0 +1,53 @@
+.container {
+  --padding-block: 10px;
+  --padding-inline: 30px;
+  --main-text-color: #{$light-text-color};
+  --hover-text-color: #{$light-text-color};
+  --main-background-color: #{$button-color-1};
+  --hover-background-color: #{lighten($button-color-1, 10%)};
+  --main-opacity: 1;
+  --hover-opacity: 1;
+  --main-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  --hover-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  --border-radius: 30px;
+  --text-arrow-gap: 17px;
+
+  background-color: var(--main-background-color);
+  opacity: var(--main-opacity);
+  box-shadow: var(--main-shadow);
+  padding: var(--padding-block) var(--padding-inline);
+  gap: var(--text-arrow-gap);
+  border-radius: var(--border-radius);
+  color: var(--main-text-color);
+
+  width: fit-content;
+  height: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 300ms;
+  
+  border: none;
+  &:hover {
+    opacity: var(--hover-opacity);
+    box-shadow: var(--hover-shadow);
+    background-color: var(--hover-background-color);
+    color: var(--hover-text-color);
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+    color: inherit;
+  }
+  .textButton {
+    text-align: center;
+    color: inherit;
+  }
+  .arrowRight {
+    width: 9px;
+    height: auto;
+    color: inherit;
+  }
+}

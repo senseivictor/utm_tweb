@@ -1,0 +1,35 @@
+// html::-webkit-scrollbar {
+//   opacity: 0;
+// }
+@import "custom_fonts";
+html {
+  background-color: $main-color-2;
+  
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    font-family: 'Montserrat Regular';
+    font-weight: 700;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  a{
+    color: black;
+  }
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--modules-gap);
+  }
+}

@@ -1,0 +1,36 @@
+.moduleGroup {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'pic title'
+    'pic description';
+    .picContainer {
+      // contain:size;
+      grid-area: pic;
+      height: 100%;
+      max-height: 300px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      .pic {
+        border-radius: inherit;
+        position: relative;
+        height: 100%;
+      }
+    }
+    .title {
+      grid-area: title;
+      color: $dark-text-color;
+      align-self: flex-end;
+    }
+    .description {
+      list-style-position: inside; //otherwise points go outside container
+      color: $dark-text-color;
+      grid-area: description;
+    }
+  }
+  
+  

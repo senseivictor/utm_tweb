@@ -1,0 +1,29 @@
+@mixin fadedBackground($fadeLength: 100px, $color: $main-color-2, $darkenAmount: 7%, $borderRadius: '50% / 5%', $zIndex: -3) {
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + #{$fadeLength});
+      height: calc(100% + #{$fadeLength});
+      left: 0;
+      top: calc(#{$fadeLength} / -2);
+      background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        darken($color, $darkenAmount) #{$fadeLength},
+        darken($color, $darkenAmount) calc(100% - #{$fadeLength}),
+        rgba(0, 0, 0, 0)
+      );
+      border-radius: #{$borderRadius};
+      z-index: #{$zIndex};
+    }
+}
+
+@mixin backdrop($blurAmount: 4px, $darkenAmount: 0.5, $zIndex: 5) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, $darkenAmount);
+  backdrop-filter: blur($blurAmount);
+  z-index: $zIndex;
+}

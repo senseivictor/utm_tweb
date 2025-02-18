@@ -1,0 +1,52 @@
+@mixin slideDown($startY: -20px, $startOpacity: 0, $endY: 0, $endOpacity: 1, $animationTime: 300ms) {
+  @keyframes slideDown {
+    from {
+      transform: translateY($startY);
+      opacity: $startOpacity;
+    }
+    to {
+      transform: translateY($endY);
+      opacity: $endOpacity;
+    }
+  }
+  animation: slideDown $animationTime ease-out;
+}
+
+@mixin widthGrow($startWidth: 0, $endWidth: 150px, $startOpacity: 0, $endOpacity: 1, $animationTime: 300ms) {
+  @keyframes widthGrow {
+    from {
+      width: $startWidth;
+      opacity: $startOpacity;
+    }
+    to {
+      width: $endWidth;
+      opacity: $endOpacity;
+    }
+  }
+  animation: widthGrow $animationTime ease-out forwards;
+}
+
+@mixin widthShrink($startWidth: 150px, $endWidth: 0, $startOpacity: 1, $endOpacity: 0, $animationTime: 300ms) {
+  @keyframes widthShrink {
+    from {
+      width: $startWidth;
+      opacity: $startOpacity;
+    }
+    to {
+      width: $endWidth;
+      opacity: $endOpacity;
+    }
+  }
+  animation: widthShrink $animationTime ease-out forwards;
+}
+
+@mixin blurIn($startBlur: 0px, $endBlur: 5px){
+  @keyframes blur-in {
+    from {
+      backdrop-filter: blur($startBlur);
+    }
+    to {
+      backdrop-filter: blur($endBlur);
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.footer {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(
+      to bottom,
+      #82c1ff  20%,
+      #1088ff,
+    );
+    border-radius: 50% 50% 0 0 / 5% 5% 0 0; //50% 50% 0 0 - horizontal radii, 5% 5% 0 0 - vertical radii, 4 values: upleft, upright, bottomright, bottomleft
+  }
+  .bgCirclesContainer {
+    display: flex;
+    top: 40%;
+    height: 40%;
+  }
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 2fr 150px 1fr;
+  grid-template-areas: 
+  'heading heading heading'
+  'input input  button'
+  'copyright copyright copyright';
+
+  .heading {
+    grid-area: heading;
+    color: #003e7c;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    color: #003e7c;
+    span {
+      color: #cae5ff;
+    }
+  }
+  .input {
+    grid-area: input;
+    border: none;
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .button {
+    grid-area: button;
+    align-self: center;
+    width: 100%;
+    flex-shrink: 0;
+    text-wrap: nowrap;
+    --main-text-color: #{$light-text-color};
+    --hover-text-color: #{$light-text-color};
+    --main-background-color: #{$main-color-1};
+    --hover-background-color: #{lighten($main-color-1, 10%)};
+    --main-shadow: 0;
+    --hover-shadow: 0;
+  }
+}

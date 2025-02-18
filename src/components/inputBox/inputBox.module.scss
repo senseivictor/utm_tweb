@@ -1,0 +1,38 @@
+.container {
+  --background-color: white;
+  --input-padding-inline: 20px;
+  --input-padding-block: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 40px;
+  border: 1px solid $soft-text-color;
+  height: fit-content;
+  width: 100%;
+  padding-inline: var(--input-padding-inline);
+  padding-block: var(--input-padding-block);
+  overflow: hidden;
+  background-color: var(--background-color);
+  .input {
+    border: 0;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    color: $soft-text-color;
+    resize: none;
+    white-space: var(--input-white-space);
+    word-wrap: var(--input-word-wrap);
+    background-color: transparent;
+    scrollbar-width: none;
+    border-radius: 0;
+    &:focus {
+        outline: none; // Remove border when input is focused
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 15px;
+  }
+}

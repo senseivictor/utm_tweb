@@ -1,0 +1,74 @@
+.global {
+  position: relative;
+  gap: var(--global-elements-gap);
+  row-gap: var(--global-elements-gap);
+  padding-inline: var(--global-padding);
+}
+.globalSubmodules {
+  gap: var(--global-elements-gap);
+  row-gap: var(--global-elements-gap);
+}
+.heading1 {
+  font-size: var(--heading1-font-size);
+}
+.heading2 {
+  font-size: var(--heading2-font-size);
+  span {
+    color: $main-color-1;
+  }
+}
+.heading3 {
+  font-size: var(--heading3-font-size);
+  color: black;
+}
+.heading4 {
+  font-size: var(--heading4-font-size);
+  span {
+    color: $main-color-1;
+    font-size: var(--heading4-span-font-size);
+  }
+}
+.description1 {
+  font-size: var(--description1-font-size);
+}
+.description2 {
+  font-size: var(--description2-font-size);
+}
+.topBarText {
+  font-size: var(--topBarText-font-size);
+}
+.smallerText, .inputText, ::placeholder {
+  font-size: var(--smallerText-font-size);
+}
+
+
+
+.togglePanels {
+  position: fixed;
+  z-index: 35;
+}
+.sideMenuZIndex {
+  z-index: 30;
+}
+.backdropZIndex {
+  z-index: 25;
+}
+.topBarZIndex {
+  z-index: 20;
+}
+.headerZIndex {
+  z-index: 15;
+}
+.expandingElements {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+.clickableElements {
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+.bgCirclesZIndex {
+  z-index: -10;
+}
