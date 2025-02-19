@@ -8,12 +8,12 @@ const Header = () => {
   return (
     <div className={`${styles.header} ${styles.headerZIndex}`}>
       <a href={"/"}><img src={logo} className={`${styles.logoTitle}`} /></a>
-      <div className={`${styles.mainNavigation}`} >
-        <a href="/techniques" className={`${styles.item} ${styles.clickableElements}`}>Tehnici</a>
-        <a href="/applications" className={`${styles.item} ${styles.clickableElements}`}>Aplicații</a>
-        <a href="/challenges" className={`${styles.item} ${styles.clickableElements}`}>Provocări</a>
-        <a href="/conclusions" className={`${styles.item} ${styles.clickableElements}`}>Concluzii</a>
-      </div>
+      <ul className={`${styles.mainNavigation}`} >
+        <li><a href="/techniques" className={`${styles.item} ${styles.clickableElements}`}>Tehnici</a></li>
+        <li><a href="/applications" className={`${styles.item} ${styles.clickableElements}`}>Aplicații</a></li>
+        <li><a href="/challenges" className={`${styles.item} ${styles.clickableElements}`}>Provocări</a></li>
+        <li><a href="/conclusions" className={`${styles.item} ${styles.clickableElements}`}>Concluzii</a></li>
+      </ul>
     </div>
   );
 };

@@ -1,7 +1,13 @@
 .module_Intro {
+  border-spacing: 40px 20px;
   .picContainer {
     width: 50%;
     border-radius: 40px;
+    transition: scale 300ms;
+    cursor: pointer;
+    &:hover {
+      scale: 1.06;
+    }
     .pic {
       border-radius: inherit;
       position: relative;
