@@ -4,3 +4,5 @@ export {default as Applications} from './Applications';
 export {default as Challenges} from './Challenges';
 export {default as Conclusions} from './Conclusions';
 export {default as Error} from './Error';
+export {default as Login} from './Login';
+export {default as Dashboard} from './Dashboard';

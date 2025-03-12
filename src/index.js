@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Intro, Error, Techniques, Applications, Challenges, Conclusions } from './pages';
+import { Intro, Error, Techniques, Applications, Challenges, Conclusions, Login, Dashboard } from './pages';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { GlobalWrapper } from 'utilities';  // Adjust import path as needed
+import { GlobalWrapper } from 'utilities';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: '/conclusions',
     element: <Conclusions />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />,
   },
 ]);
 

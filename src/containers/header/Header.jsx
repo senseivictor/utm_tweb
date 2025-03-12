@@ -13,6 +13,7 @@ const Header = () => {
         <li><a href="/applications" className={`${styles.item} ${styles.clickableElements}`}>Aplicații</a></li>
         <li><a href="/challenges" className={`${styles.item} ${styles.clickableElements}`}>Provocări</a></li>
         <li><a href="/conclusions" className={`${styles.item} ${styles.clickableElements}`}>Concluzii</a></li>
+        <li><a href="/login" className={`${styles.item} ${styles.clickableElements}`}>Logare</a></li>
       </ul>
     </div>
   );

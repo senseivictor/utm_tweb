@@ -5,3 +5,5 @@ export {default as Module_Techniques} from './module_Techniques/Module_Technique
 export {default as Module_Applications} from './module_Applications/Module_Applications';
 export {default as Module_Challenges} from './module_Challenges/Module_Challenges';
 export {default as Module_Conclusions} from './module_Conclusions/Module_Conclusions';
+export {default as Module_Login} from './module_Login/Module_Login';
+export {default as Module_Dashboard} from './module_Dashboard/Module_Dashboard';
